@@ -1,0 +1,172 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	background-image: url('https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+	background-size: auto 100vh;
+	font-family: arial;
+	height: 100vh;
+	background-position: center, bottom right;
+	background-size: cover;
+	background-repeat: no-repeat;
+	backdrop-filter: blur(10px);
+}
+
+/* se a tela tiver pelo menos 400 px vai carregar esses estilos*/
+@media (min-width: 500px) {
+  body {
+	  font-size: 19px;
+  }
+}
+
+header {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.menu {
+	background-color: #dce8e6;
+	font-family: Marker Felt, fantasy;
+	position: fixed;
+	width: 100vw;
+	top: 0;
+	
+}
+
+.menu ul {
+	display: flex;
+	justify-content: space-around;
+}
+
+.menu li {
+	list-style: none;
+}
+
+section.texto-sobre {
+	margin: 1em;
+    font-size: 1.4em;
+    font-family: Arial;
+    font-weight: bold;
+    color: #f1d7f7;
+	line-height: 1em;
+	text-align: center;
+}
+
+.menu a {
+	display: block;
+	padding: 10px 20px;
+}
+
+a {
+	color: #600078;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+}
+
+.site-title {
+	text-align: center;
+	color: #e99dfc;
+	font-family: Didot, serif;
+}
+
+.site-title {
+	font-size: 4em;
+}
+
+.site-subtitle {
+	text-align: center;
+	color:#f1d7f7;
+	line-height: 2em;
+}
+
+.contato,
+.sobre {
+	min-height: 100vh;
+	background-image: url('https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+	background-position: center, bottom right;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.contato,
+element.style {
+	padding: 2em;
+	background-image: url('https://images.unsplash.com/photo-1517210122415-b0c70b2a09bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80');
+	background-position: center, bottom right;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+h2.texto-sobre {
+	font-size: 1.4em;
+}
+
+.contato h2,
+.sobre h2 {
+	text-align: center;
+	font-size: 50px;
+	color: #e99dfc;
+	margin-bottom: 1.5em;
+	font-family: Didot, serif;
+}
+
+.sobre .grid {
+	display: grid;
+	gap: 2em;
+	align-content: center;
+	justify-content: center;
+}
+
+@media (min-width: 400px) {
+	.sobre .grid {
+		grid-template-columns: repeat(2, 240px);
+	}	
+}
+
+.sobre figure {
+	text-align: center;
+}
+
+.foto {
+	height: 180px;
+	width: 180px;
+	object-fit: cover;
+	transition: transform 500ms;
+}
+
+.foto:hover {
+	transform: scale(1.1);
+}
+
+.contato a:active,
+.contato .icons {
+	text-align: center;
+}
+
+.contato a {
+	font-size: 5em;
+	color: #7574b9;
+}
+
+.fa-instagram {
+	color: rgb(255, 0, 157);
+}
+
+.fa-envelope-open-text {
+	color: rgb(247, 57, 57);
+}
+
+.contato a:active,
+.contato a:hover {
+	text-decoration: none;
+	text-shadow: 0px 0px 10px white;
+	color: black;
+}
